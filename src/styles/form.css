@@ -2,7 +2,9 @@
   grid-area: form;
   max-width: 512px;
 
-  background-color: #232225;
+  background-color: #020242;
+  border: 1px solid rgba(255, 255, 255, 0.656);
+  box-shadow: 0px 0px 10px white;
   border-radius: 0.75rem;
 
   padding: 5rem;
@@ -25,13 +27,13 @@
 }
 
 .form > header p {
-  color: #98959d;
+  color: #ff0000;
   font-size: 0.87rem;
 }
 
 .label {
   font-size: 1rem;
-  color: #b2afb6;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -39,7 +41,7 @@
   width: 100%;
   height: 3rem;
 
-  border: 1px solid #3e3c41;
+  border: 1px solid #ffffff;
   padding: 0.87rem 0.75rem;
   border-radius: 0.5rem;
 
@@ -57,7 +59,7 @@
   font-family: "Catamaran", sans-serif;
 
   font-size: 1rem;
-  color: #b2afb6;
+  color: #ffffff;
   background-color: transparent;
 
   outline: none;
@@ -73,8 +75,8 @@
   border-radius: 0.5rem;
   border: none;
   font-size: 0.87rem;
-  background-color: #b8952e;
-  color: #050505;
+  background-color: #d50101d6;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   padding: 1rem 1.25rem;
@@ -84,7 +86,8 @@
 }
 
 .button:hover {
-  background-color: #dbc170;
+  background-color: #ffffff;
+  color: black;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -109,7 +112,7 @@
   border-radius: 0.5rem;
 
   font-size: 1rem;
-  border: 1px solid #3e3c41;
+  border: 1px solid rgb(109, 109, 109);
 
   cursor: pointer;
 
@@ -120,14 +123,14 @@
 
 .hour-period {
   width: 100%;
-  color: #98959d;
+  color: #ffffff;
   font-size: 0.87rem;
 
   margin-top: 0.75rem;
 }
 
 .hour-available {
-  background-color: #2e2c30;
+  background-color: #020242;
 }
 
 .hour-unavailable {
@@ -137,13 +140,13 @@
 }
 
 .hour-selected {
-  border: 1px solid #b8952e;
-  color: #b8952e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .hour:not(.hour-unavailable):hover {
-  border: 1px solid #b8952e;
-  color: #b8952e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 @media (max-width: 1100px) {

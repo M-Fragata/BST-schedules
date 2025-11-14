@@ -13,12 +13,12 @@
 }
 
 .schedule > header p {
-  color: #98959d;
+  color: #ff0404;
   font-size: 0.87rem;
 }
 
 .schedule-period {
-  border: 1px solid #2e2c30;
+  border: 1px solid #ffffff;
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
 }
@@ -29,7 +29,7 @@
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #2e2c30;
+  border-bottom-color: #ffffff;
 
   padding: 0.75rem 1.25rem;
 }
@@ -41,13 +41,13 @@
 
 .schedule-period header strong {
   flex: 1;
-  color: #98959d;
+  color: #ffffff;
   font-size: 0.87rem;
 }
 
 .schedule-period header span {
   font-size: 0.87rem;
-  color: #98959d;
+  color: #ffffff;
 }
 
 .schedule-period ul {
@@ -57,7 +57,7 @@
 
 .schedule-period ul li {
   height: 2rem;
-  color: #b2afb6;
+  color: #ffffff;
   font-size: 1rem;
 
   display: flex;
