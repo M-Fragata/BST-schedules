@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="./src/assets/bagre-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet" />
 
-    <title>BST</title>
-  </head>
-  <body>
-    <div class="container">
+  <link rel="icon" href="./src/assets/bagre-icon.png" />
 
-      <form class="form">
-        <header>
-          <h1>Agende seu treinamento</h1>
-          <p>
-            Selecione data, horário e informe o nome do atleta para criar o
-            agendamento
-          </p>
-        </header>
+  <title>BST</title>
+</head>
 
-        <label for="date" class="label">Data</label>
-        <div class="input">
-          <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
-          <input type="date" id="date" name="date" required />
-        </div>
+<body>
+  <div class="container">
 
-        <span class="label">Horários</span>
-        <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
-          <!-- Exemplo: Manhã 
+    <form class="form">
+      <header>
+        <h1>Agende seu treinamento</h1>
+        <p>
+          Selecione data, horário e informe o nome do atleta para criar o
+          agendamento
+        </p>
+      </header>
+
+      <label for="date" class="label">Data</label>
+      <div class="input">
+        <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <span class="label">Horários</span>
+      <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
+        <!-- Exemplo: Manhã 
           <li data-period="morning" class="hour-period">Manhã</li>
           <li data-period="morning" value="09:00" class="hour hour-available">
             09:00
           </li> -->
-         
-          <!-- Exemplo: Tarde  
+
+        <!-- Exemplo: Tarde  
           <li data-period="afternoon" class="hour-period">Tarde</li>
           <li
             data-period="afternoon"
@@ -49,45 +48,39 @@
             class="hour hour-unavailable">
             13:00
           </li> -->
-          
-          <!-- Exemplo: Noite 
+
+        <!-- Exemplo: Noite 
           <li data-period="night" class="hour-period">Noite</li>
 
           <li data-period="night" value="19:00" class="hour hour-available">
             19:00
           </li> -->
-        </ul>
+      </ul>
 
-        <label for="client" class="label">Atleta</label>
-        <div class="input">
-          <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
-          <input
-            type="text"
-            id="client"
-            name="client"
-            placeholder="Nome do atleta"
-            required
-          />
-        </div>
+      <label for="client" class="label">Atleta</label>
+      <div class="input">
+        <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
+        <input type="text" id="client" name="client" placeholder="Nome do atleta" required />
+      </div>
 
-        <button type="submit" class="button">Agendar</button>
-      </form>
+      <button type="submit" class="button">Agendar</button>
+    </form>
 
-      <aside class="schedule">
+    <aside class="schedule">
+      <header>
+        <img src="./src/assets/logo.png" alt="Logo" class="logo" />
+        <h1>Agendamentos</h1>
+        <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+      </header>
+
+      <section class="schedule-period">
         <header>
-          <img src="./src/assets/logo.png" alt="Logo" class="logo" />
-          <h1>Agendamentos</h1>
-          <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+          <img src="./src/assets/morning.svg" alt="Manhã" />
+          <strong>Manhã</strong>
+          <span>08h-11h</span>
         </header>
-
-        <section class="schedule-period">
-          <header>
-            <img src="./src/assets/morning.svg" alt="Manhã" />
-            <strong>Manhã</strong>
-            <span>08h-11h</span>
-          </header>
-          <ul id="period-morning" class="period">
-            <!-- Exemplo
+        <ul id="period-morning" class="period">
+          <!-- Exemplo
             <li>
               <strong>11:00</strong>
               <span>Rodrigo Gonçalves</span>
@@ -97,17 +90,17 @@
                 class="cancel-icon"
               />
             </li>   -->
-          </ul>
-        </section>
+        </ul>
+      </section>
 
-        <section class="schedule-period">
-          <header>
-            <img src="./src/assets/afternoon.svg" alt="Tarde" />
-            <strong>Tarde</strong>
-            <span>14h-17h</span>
-          </header>
-          <ul id="period-afternoon" class="period">
-            <!-- Exemplo
+      <section class="schedule-period">
+        <header>
+          <img src="./src/assets/afternoon.svg" alt="Tarde" />
+          <strong>Tarde</strong>
+          <span>14h-17h</span>
+        </header>
+        <ul id="period-afternoon" class="period">
+          <!-- Exemplo
             <li>
               <strong>14:00</strong>
               <span>Rodrigo Gonçalves</span>
@@ -117,17 +110,17 @@
                 class="cancel-icon"
               />
             </li>  -->
-          </ul>
-        </section>
+        </ul>
+      </section>
 
-        <section class="schedule-period">
-          <header>
-            <img src="./src/assets/night.svg" alt="noite" />
-            <strong>Noite</strong>
-            <span>18h-21h</span>
-          </header>
-          <ul id="period-night" class="period">
-            <!-- Exemplo
+      <section class="schedule-period">
+        <header>
+          <img src="./src/assets/night.svg" alt="noite" />
+          <strong>Noite</strong>
+          <span>18h-21h</span>
+        </header>
+        <ul id="period-night" class="period">
+          <!-- Exemplo
             <li>
               <strong>19:00</strong>
               <span>Rodrigo Gonçalves</span>
@@ -137,12 +130,13 @@
                 class="cancel-icon"
               />
             </li>  -->
-          </ul>
-        </section>
-      </aside>
-    </div>
-    <footer id="footer">
-      <p><strong>© 2025 Bagres Swim Team.</strong> All rights reserved. Since 2023.</p>
-    </footer>
-  </body>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <footer id="footer">
+    <p><strong>© 2025 Bagres Swim Team.</strong> All rights reserved. Since 2023.</p>
+  </footer>
+</body>
+
 </html>
