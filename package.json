@@ -1,6 +1,7 @@
 {
-  "name": "bst-schedules",
-  "description": "Aplicação web de agendamentos para cortes de cabelo.",
+  "name": "Bagres Swim Team Agendamentos",
+  "short_name": "Bagres Schedules",
+  "description": "Agende seu treino com o Bagres Swim Team",
   "author": "M. Fragata",
   "scripts": {
     "build": "webpack",
