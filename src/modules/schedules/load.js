@@ -10,6 +10,7 @@ export async function schedulesDay() {
 
     // Obtém a data do input
     const date = selectedDate.value
+    console.log(date)
 
     // Busca na API os agendamentos
     const dailySchedules = await scheduleFetchByDay({ date })

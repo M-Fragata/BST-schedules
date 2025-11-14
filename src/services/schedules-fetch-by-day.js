@@ -1,16 +1,22 @@
-import { supabaseConfig } from "./api-config.js"
 import { supabase } from "../supabase-cliente.js";
 import dayjs from "dayjs"
 
+
 export async function scheduleFetchByDay({ date }) {
 
+    
 
+        const startOfDay = dayjs(date).startOf('day').toISOString()
+        const endOfDay = dayjs(date).endOf('day').toISOString()
+    
         const { data, error } = await supabase
         .from('schedules')
         .select('*')//Exibe todas as colunas (id, name, when)
-        //.order('when', { ascending: true})
-        //.like('when', `${date}%`)
-        
+        .gte('when', startOfDay) // Maior ou igual ao início do dia
+        .lte('when', endOfDay) // Menor ou igual ao final do dia
+        .order('when')
+
+
 
         if(error) {
             console.error('Error ao buscar agendamentos no Supabase', error.message)
