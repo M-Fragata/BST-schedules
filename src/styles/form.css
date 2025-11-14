@@ -114,7 +114,7 @@
 
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
-  background: url("../assets/arrow-down.svg") no-repeat;
+  background: url("../assets/arrow-down.png") no-repeat;
 }
 
 .hours {
