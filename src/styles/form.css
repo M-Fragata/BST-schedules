@@ -5,7 +5,7 @@
 
   background-image: url(../assets/priscila.jpeg);
   background-size: cover;
-  background-position: center left;
+  background-position: center center;
 
   background-color: #020242;
   border: 1px solid rgba(255, 255, 255, 0.656);
@@ -87,7 +87,7 @@
   border-radius: 0.5rem;
   border: none;
   font-size: 0.87rem;
-  background-color: #d50101d6;
+  background-color: #d50101c6;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
@@ -98,7 +98,7 @@
 }
 
 .button:hover {
-  background-color: #ffffff;
+  background-color: #ffffffb8;
   color: black;
 }
 
